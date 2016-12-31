@@ -11,8 +11,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.seals.shubham.retrofit_test.MainActivity">
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:padding="5dp"
+        android:ems="10"
+        android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp" android:layout_marginTop="51dp"
+        android:id="@+id/editUser"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:padding="5dp"
+        android:layout_below="@+id/editUser" android:layout_alignEnd="@+id/editUser"
+        android:layout_marginTop="58dp" android:id="@+id/editPass"/>
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="65dp" android:id="@+id/btnReg"
+        android:layout_below="@+id/editPass" android:layout_alignStart="@+id/editPass"/>
 </RelativeLayout>
